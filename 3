@@ -10,45 +10,14 @@ namespace ConsoleApplication9
     {
         static void Main(string[] args)
         {
-            double a, b, c, q;
+            double a, b, c;
             Console.Write("Введите число a: ");
             a = double.Parse(Console.ReadLine());
             Console.Write("Введите число b: ");
             b = double.Parse(Console.ReadLine());
-            q = a * a;
-            a = q;
-            q = b * b;
-            b = q;
-            c = a + b;
-            Console.Write("Сумма квадратов этих чисел равна ");
+            c = (a + b) / 2;
+            Console.Write("Среднее арифметическое этих чисел равно ");
             Console.WriteLine(c);
-            if (a > b)
-            {
-                c = a - b;
-                Console.Write("Разность квадратов этих чисел равна ");
-                Console.WriteLine(c);
-            }
-            else
-            {
-                c = b - a;
-                Console.Write("Разность квадратов этих чисел равна ");
-                Console.WriteLine(c);
-            }
-            c = a * b;
-            Console.Write("Произведение квадратов этих чисел равно ");
-            Console.WriteLine(c);
-            if (a > b)
-            {
-                c = a / b;
-                Console.Write("Частное квадратов этих чисел равно ");
-                Console.WriteLine(c);
-            }
-            else
-            {
-                c = b / a;
-                Console.Write("Частное квадратов этих чисел равно ");
-                Console.WriteLine(c);
-            }
             Console.ReadKey();
         }
     }
