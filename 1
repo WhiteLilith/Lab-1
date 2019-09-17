@@ -1,24 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApplication9
+public class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double a, b, c;
-            Console.Write("Введите число a: ");
-            a = double.Parse(Console.ReadLine());
-            Console.Write("Введите число b: ");
-            b = double.Parse(Console.ReadLine());
-            c = (a + b) / 2;
-            Console.Write("Среднее арифметическое этих чисел равно ");
-            Console.WriteLine(c);
-            Console.ReadKey();
-        }
-    }
-}
+  public static void Main()
+  {
+    double a, b, c, d;
+    Console.WriteLine("Введите длину стороны a: ");
+    a = double.Parse(Console.ReadLine());
+    Console.WriteLine("Введите длину стороны b: ");
+    b = double.Parse(Console.ReadLine());
+    c = a*b;
+    d = 2*(a+b);
+    Console.Write("Площадь прямоугольника равна ");
+    Console.WriteLine(c);
+    Console.Write("Периметр прямоугольника равен ");
+    Console.WriteLine(d);
+  }
+} 
