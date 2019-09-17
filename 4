@@ -1,55 +1,31 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApplication9
+public class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double a, b, c;
-            Console.Write("Введите число a: ");
-            a = double.Parse(Console.ReadLine());
-            Console.Write("Введите число b: ");
-            b = double.Parse(Console.ReadLine());
-            c = Math.Abs(a);
-            a = c;
-            c = Math.Abs(b);
-            b = c;
-            c = a + b;
-            Console.Write("Сумма модулей этих чисел равна ");
-            Console.WriteLine(c);
-            if (a > b)
-            {
-                c = a - b;
-                Console.Write("Разность модулей этих чисел равна ");
-                Console.WriteLine(c);
-            }
-            else
-            {
-                c = b - a;
-                Console.Write("Разность модулей этих чисел равна ");
-                Console.WriteLine(c);
-            }
-            c = a * b;
-            Console.Write("Произведение модулей этих чисел равно ");
-            Console.WriteLine(c);
-            if (a > b)
-            {
-                c = a / b;
-                Console.Write("Частное модулей этих чисел равно ");
-                Console.WriteLine(c);
-            }
-            else
-            {
-                c = b / a;
-                Console.Write("Частное модулей этих чисел равно ");
-                Console.WriteLine(c);
-            }
-            Console.ReadKey();
-        }
-    }
+public static void Main()
+{
+double a, b, c, q;
+Console.WriteLine("Введите число a: ");
+a = double.Parse(Console.ReadLine());
+Console.WriteLine("Введите число b: ");
+b = double.Parse(Console.ReadLine());
+q = a*a;
+a = q;
+q = b*b;
+b = q;
+c = a+b;
+Console.Write("Сумма квадратов этих чисел равна ");
+Console.WriteLine(c);
+c = a-b;
+Console.Write("Разность квадратов этих чисел равна ");
+Console.WriteLine(c);
+c = a*b;
+Console.Write("Произведение квадратов этих чисел равно ");
+Console.WriteLine(c);
+c = a/b;
+Console.Write("Частное квадратов этих чисел равно ");
+Console.WriteLine(c);
+}
 }
