@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double pi, d, L;
+            Console.Write("Введите диаметр окружности: ");
+            d = double.Parse(Console.ReadLine());
+            pi = 3.14;
+            L = d * pi;
+            Console.Write("Длина окружности равна ");
+            Console.WriteLine(L);
+            Console.ReadKey();
+        }
+    }
+}
